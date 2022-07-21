@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #664147;
+}
+
+body, .quote-input {
+    font-family: monospace;
+}
+
+.container {
+    background-color: #0FF4C6;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+    margin:auto;
+
+}
+
+.timer {
+    position: absolute;
+    top: 8rem;
+    font-size: 3rem;
+    color: #f0db4f;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-size: 1rem;
+    font-family: monospace;
+
+}
+
+.quote-input {
+    background-color: transparent;
+    border: 2px solid #664147;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.quote-input:focus {
+    border-color:black;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
+
+.title-display {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #f0db4f;
+    font-weight: bold;
+    font-family:fantasy;
+}
+
+.wpm-text {
+    font-size: 1rem;
+    font-family: monospace;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.wpm-container {
+    background-color: #0FF4C6;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 120px;
+    max-width: 90%;
+    margin: auto;
+    top: -1020px;
+
+}
+
