@@ -2,34 +2,41 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color1: #031A6B;
+    --color2: #FBFFF1;
+    --color3: #B4C5E4;
+  }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #664147;
+    background-color: var(--color1);
 }
 
 body, .quote-input {
     font-family: monospace;
 }
 
-.container {
-    background-color: #0FF4C6;
+.quote-container {
+    background-color: var(--color3);
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
     max-width: 90%;
     margin:auto;
+    left: 50%
 
 }
 
 .timer {
     position: absolute;
-    top: 8rem;
-    font-size: 3rem;
-    color: #f0db4f;
+    top: 15%;
+    font-size: 2.5rem;
+    color: var(--color2);
     font-weight: bold;
     font-family: monospace;
 }
@@ -43,9 +50,9 @@ body, .quote-input {
 
 }
 
-.quote-input {
+.quote-input { 
     background-color: transparent;
-    border: 2px solid #664147;
+    border: 2px solid black;
     outline: none;
     width: 100%;
     height: 8rem;
@@ -72,7 +79,7 @@ body, .quote-input {
     position: absolute;
     top: 2rem;
     font-size: 3rem;
-    color: #f0db4f;
+    color: var(--color2);
     font-weight: bold;
     font-family:fantasy;
 }
@@ -87,7 +94,7 @@ body, .quote-input {
 }
 
 .wpm-container {
-    background-color: #0FF4C6;
+    background-color: var(--color3);
     padding: 1rem;
     border-radius: .5rem;
     width: 120px;
@@ -97,3 +104,40 @@ body, .quote-input {
 
 }
 
+.replay-class {
+    background-color: var(--color3);
+    border-radius: 50%;
+    max-width: 8%;
+    height: auto;
+    padding: 0.3rem;
+    position: relative;
+    left: 430px;
+    top: -53px;
+
+}
+
+.leaderboard-container {
+    background-color: var(--color2);
+    padding: 1rem;
+    border-radius: .25rem;
+    width: 200px;
+    height: 225px;
+    max-width: 25%;
+    position: relative;
+    top: -355px;
+    left: 720px;
+
+}
+
+.leaderboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    font-family: cursive; 
+}
+
+.leaderboard {
+    font-size: 18px;
+    color: black;
+    font-family: monospace;
+}

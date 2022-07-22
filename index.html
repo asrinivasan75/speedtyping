@@ -9,10 +9,10 @@
     <title>Speed Typing</title>
 </head>
 <body>
-    <div class = 'title-display'>Welcome to the Typing Game</div>
+    <div class = 'title-display'>Welcome to the Typing Game v0.1.1</div>
     <div class="timer" id="timer"></div><div>
-    <div><br></br><br></br><br></br></div>
-    <div class="container">
+    <div><br></br><br></br><br></br><br></br><br></br><br></br></div>
+    <div class="quote-container">
         <div class="quote-display" id = "quoteDisplay"></div>
         <textarea id="quoteInput" class="quote-input"></textarea>
     </div>
@@ -22,6 +22,14 @@
     <div class="wpm-container">
         <div class="wpm-text" id = "wpmtext"></div>
     </div>
-    
+    <input class = 'replay-class' id = "replayButton" type="image" src = "public/repeaticon.png" onclick="renderNewQuote();" />
+    <div class = "leaderboard-container">
+        <div class = "leaderboard-title">Leaderboard: <br></br></div>
+        <div class = "leaderboard" id = "leaderboardone"></div>
+        <div class = "leaderboard" id = "leaderboardtwo"></div>
+        <div class = "leaderboard" id = "leaderboardthree"></div>
+        <div class = "leaderboard" id = "leaderboardfour"></div>
+        <div class = "leaderboard" id = "leaderboardfive"></div>
+    </div>
 </body>
 </html>
