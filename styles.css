@@ -16,7 +16,6 @@ body {
     margin: 0;
     /* background-color: var(--color1); */
     background-image: url(public/background.jpeg);
-    image-rendering:optimizeQuality;
     background-size: 100%; 
     overflow: hidden;
 }
