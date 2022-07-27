@@ -3,7 +3,7 @@
 ### Description
 
 Speed typing game created using Javascript, HTML, and CSS.  
-The game involves setting up a website where users can type a quote, and once they finish it a new one is generated.
+The game involves setting up a website where users can type a quote, and once they finish it a new one is generated.  
 Currently, there is a wpm feature which tracks your wpm while you are typing, a leaderboard feature which stores your highest scores locally, as well as pause/restart features.
 
 ### API Quote Generation
