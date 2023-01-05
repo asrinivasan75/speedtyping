@@ -111,12 +111,12 @@ body, .quote-input {
 .replay-class {
     background-color: var(--color3);
     border-radius: 50%;
-    max-width: 6%;
+    max-width: 4%;
     height: auto;
     padding: 0.3rem;
     position: relative;
-    left: 60%;
-    top: -53px;
+    left: 55%;
+    top: -47px;
 
 }
 
@@ -125,11 +125,11 @@ body, .quote-input {
     padding: 1rem;
     border-radius: .25rem;
     width: 200px;
-    height: 225px;
+    height: 240px;
     max-width: 25%;
     position: relative;
     top: -355px;
-    left: 90%;
+    left: 76%;
 
 }
 
@@ -137,7 +137,7 @@ body, .quote-input {
     font-size: 24px;
     font-weight:300;
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 
 .leaderboard {
@@ -149,10 +149,32 @@ body, .quote-input {
 .playbutton-class {
     background-color: var(--color3);
     border-radius: 50%;
-    max-width: 6%;
+    max-width: 4%;
     height: auto;
     padding: 0.3rem;
     position: relative;
-    left: 33%;
-    top: -340px;
+    left: 41%;
+    top: -377px;
+    margin-top: auto;
 }
+
+.resetbutton-class {
+    max-width: 6%;
+    height: auto;
+    position: relative;
+    left: 75%;
+    top: -390px;
+}
+
+.sportsbutton-class {
+    max-width: 6%;
+    height: auto;
+    position: relative;
+    left: -5%;
+    top: -600px;
+    font-size: 24px;
+    font-weight:300;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+

@@ -11,6 +11,8 @@ const leaderboardFive = document.getElementById('leaderboardfive')
 const titleText = document.getElementById("title")
 const displayText = document.getElementById("quoteDisplay")
 const previousAttempt = document.getElementById("previousattempt")
+const sportsButton = document.getElementById("sportsButton")
+sportsButton.innerText = "Hello"
 if (localStorage.getItem("leaderboard1") === null) {
     topScores = [0, 0, 0, 0, 0]
 }
@@ -72,7 +74,14 @@ quoteInputElement.addEventListener('input', () => {
 
     if (correct){
         let finalWPM = getWPM()
-        previousAttempt.innerText = '\nLast: ' + finalWPM + ' WPM'
+        if (isNaN(finalWPM))
+        {
+            previousAttempt.innerText = '\nLast: ' + 0 + ' WPM'
+        }
+        else{
+            previousAttempt.innerText = '\nLast: ' + finalWPM + ' WPM'
+        }
+        
         for (var i = 0; i < topScores.length; i++){
             if (finalWPM > topScores[i]){
                 temphigher = finalWPM
@@ -198,7 +207,7 @@ function onceFunc(func){
     }
 }
 var i = 0;
-var txt = 'Welcome to QuickType v0.1.2'; /* The text */
+var txt = 'Welcome to QuickType v0.1.3'; /* The text */
 var speed = 60; /* The speed/duration of the effect in milliseconds */
 
 function titleType() {
@@ -211,28 +220,41 @@ function titleType() {
 
 var j = 0;
 var txt2 = 'Click play icon for countdown'
-var speed = 60;
+var speed1 = 60;
 
 function descriptionType() {
     if (j < txt2.length) {
       timerElement.innerHTML += txt2.charAt(j);
       j++;
-      setTimeout(descriptionType, speed);
+      setTimeout(descriptionType, speed1);
     }
   }
 
 var k = 0;
 var txt3 = "Click play or type below to start game!"
-var speed = 60;
+var speed2 = 30;
 
 function displayType(){
     if (k < txt3.length) {
         displayText.innerHTML += txt3.charAt(k);
         k++;
-        setTimeout(displayType, speed);
+        setTimeout(displayType, speed2);
       }
 }
 
+function resetScores(){
+    topScores = [0, 0, 0, 0, 0]
+    window.localStorage.setItem('leaderboard1', topScores[0])
+    window.localStorage.setItem('leaderboard2', topScores[1])
+    window.localStorage.setItem('leaderboard3', topScores[2])
+    window.localStorage.setItem('leaderboard4', topScores[3])
+    window.localStorage.setItem('leaderboard5', topScores[4])
+    setTextScores()
+}
+
+function sportsmode(){
+    RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random'
+}
 titleType()
 descriptionType()
 displayType()
